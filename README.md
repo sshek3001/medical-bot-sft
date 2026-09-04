@@ -8,3 +8,5 @@
 
 ### Actions taken to achieve this
 - Install hugging-face `pip install -U huggingface_hub transformers`
+- moved the folder to d due to size
+
