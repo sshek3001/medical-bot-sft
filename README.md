@@ -1,4 +1,4 @@
-# SFT01 — Llama 3.2 1B QLoRA Fine-Tuning
+# SFT01 — Llama 3.2 1B QLoRA Fine-Tuning to create a healthcare bot
 
 SFT01 is an experimental project for fine-tuning **Llama 3.2 1B Instruct** using **Supervised Fine-Tuning (SFT)** with **QLoRA**.
 
