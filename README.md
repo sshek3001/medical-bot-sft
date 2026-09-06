@@ -303,60 +303,6 @@ model = PeftModel.from_pretrained(
 
 The fine-tuned model was successfully loaded and generated responses after training.
 
-## Project Structure
-
-```text
-SFT01/
-│
-├── data/
-│   └── train.jsonl
-│
-├── outputs/
-│   ├── checkpoint-1/
-│   ├── checkpoint-2/
-│   ├── checkpoint-3/
-│   ├── checkpoint-13/
-│   ├── checkpoint-26/
-│   └── checkpoint-39/
-│
-├── convert.py
-├── convert_data.py
-├── README.md
-├── test_data.py
-├── test_dataset.py
-├── test_gpu.py
-├── test_lora.py
-├── test_model.py
-├── test_qlora.py
-├── tokenize_data.py
-├── test_sft.py
-└── train.py
-```
-
-## Purpose of the Experiments
-
-The early experiments are primarily intended to understand and verify the SFT pipeline.
-
-The progression was:
-
-```text
-1. Load base Llama model
-2. Verify GPU inference
-3. Measure VRAM usage
-4. Tokenize conversational data
-5. Understand labels and loss masking
-6. Load model in 4-bit
-7. Add LoRA adapters
-8. Verify trainable parameter count
-9. Train using SFTTrainer
-10. Save LoRA checkpoints
-11. Load the trained adapter
-12. Test generation
-```
-
-The 5-example dataset was used as a pipeline test rather than as a meaningful training dataset.
-
-The 100-example dataset was the first larger SFT experiment.
 
 ## Future Work
 
